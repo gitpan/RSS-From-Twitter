@@ -2,19 +2,10 @@ NAME
     RSS::From::Twitter - Convert Twitter page to RSS
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
      # Use command-line scripts get-rss-from-twitter{,-list,-search,-user}
-
-AUTHOR
-    Steven Haryanto <stevenharyanto@gmail.com>
-
-COPYRIGHT AND LICENSE
-    This software is copyright (c) 2013 by Steven Haryanto.
-
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
 
 DESCRIPTION
 FUNCTIONS
@@ -138,4 +129,28 @@ FUNCTIONS
     message, or 'OK' if status is 200. Third element (result) is optional,
     the actual result. Fourth element (meta) is called result metadata and
     is optional, a hash that contains extra information.
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/RSS-From-Twitter>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-RSS-From-Twitter>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=RSS-From-Twitter>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 

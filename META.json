@@ -41,6 +41,7 @@
       },
       "test" : {
          "requires" : {
+            "File::Spec" : "0",
             "IO::Handle" : "0",
             "IPC::Open3" : "0",
             "Test::More" : "0"
@@ -49,11 +50,16 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://metacpan.org/release/RSS-From-Twitter",
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=RSS-From-Twitter"
+      },
+      "homepage" : "https://metacpan.org/release/RSS-From-Twitter",
       "repository" : {
-         "url" : "http://github.com/sharyanto/perl-RSS-From-Twitter"
+         "type" : "git",
+         "url" : "git://github.com/sharyanto/perl-RSS-From-Twitter.git",
+         "web" : "https://github.com/sharyanto/perl-RSS-From-Twitter"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

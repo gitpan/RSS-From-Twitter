@@ -3,6 +3,7 @@ abstract: 'Convert Twitter page to RSS'
 author:
   - 'Steven Haryanto <stevenharyanto@gmail.com>'
 build_requires:
+  File::Spec: 0
   IO::Handle: 0
   IPC::Open3: 0
   Test::More: 0
@@ -25,6 +26,7 @@ requires:
   URI::Escape: 0
   perl: 5.010001
 resources:
-  homepage: http://metacpan.org/release/RSS-From-Twitter
-  repository: http://github.com/sharyanto/perl-RSS-From-Twitter
-version: 0.02
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=RSS-From-Twitter
+  homepage: https://metacpan.org/release/RSS-From-Twitter
+  repository: git://github.com/sharyanto/perl-RSS-From-Twitter.git
+version: 0.03

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 use 5.010;
 use strict;
@@ -18,7 +18,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -26,7 +26,7 @@ get-rss-from-twitter-search - Convert Twitter public list page to RSS
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -41,6 +41,22 @@ See L<RSS::From::Twitter> for more details, including available options.
 L<get-rss-from-twitter>
 
 L<get-rss-from-twitter-search>
+
+=head1 HOMEPAGE
+
+Please visit the project's homepage at L<https://metacpan.org/release/RSS-From-Twitter>.
+
+=head1 SOURCE
+
+Source repository is at L<https://github.com/sharyanto/perl-RSS-From-Twitter>.
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website L<https://rt.cpan.org/Public/Dist/Display.html?Name=RSS-From-Twitter>
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 

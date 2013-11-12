@@ -10,6 +10,7 @@ bin/get-rss-from-twitter
 bin/get-rss-from-twitter-list
 bin/get-rss-from-twitter-search
 bin/get-rss-from-twitter-user
+build.log
 dist.ini
 lib/RSS/From/Twitter.pm
 t/00-compile.t
