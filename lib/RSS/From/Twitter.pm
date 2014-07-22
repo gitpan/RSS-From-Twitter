@@ -21,7 +21,7 @@ our @EXPORT_OK = qw(
                        get_rss_from_twitter_user
                );
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 our %SPEC;
 
@@ -261,20 +261,18 @@ RSS::From::Twitter - Convert Twitter page to RSS
 
 =head1 VERSION
 
-version 0.03
+This document describes version 0.04 of RSS::From::Twitter (from Perl distribution RSS-From-Twitter), released on 2014-07-22.
 
 =head1 SYNOPSIS
 
  # Use command-line scripts get-rss-from-twitter{,-list,-search,-user}
 
-=head1 DESCRIPTION
-
 =head1 FUNCTIONS
 
 
-None are exported by default, but they are exportable.
-
 =head2 get_rss_from_twitter(%args) -> [status, msg, result, meta]
+
+Convert Twitter page to RSS.
 
 In June 2013, Twitter retired the RSS v1 API (e.g.
 http://search.twitter.com/search.rss?q=blah, etc). However, its replacement, the
@@ -307,11 +305,23 @@ URL, e.g. https://twitter.com/foo or file:/test.html.
 
 Return value:
 
-Returns an enveloped result (an array). First element (status) is an integer containing HTTP status code (200 means OK, 4xx caller error, 5xx function error). Second element (msg) is a string containing error message, or 'OK' if status is 200. Third element (result) is optional, the actual result. Fourth element (meta) is called result metadata and is optional, a hash that contains extra information.
+Returns an enveloped result (an array).
+
+First element (status) is an integer containing HTTP status code
+(200 means OK, 4xx caller error, 5xx function error). Second element
+(msg) is a string containing error message, or 'OK' if status is
+200. Third element (result) is optional, the actual result. Fourth
+element (meta) is called result metadata and is optional, a hash
+that contains extra information.
+
+ (any)
+
 
 =head2 get_rss_from_twitter_list(%args) -> [status, msg, result, meta]
 
-This function calls getI<rss>from_twitter() with URL:
+Convert Twitter public list page to RSS.
+
+This function calls get_rss_from_twitter() with URL:
 C<https//twitter.com/USERNAME/LISTNAME>.
 
 Arguments ('*' denotes required arguments):
@@ -336,11 +346,23 @@ Twitter username.
 
 Return value:
 
-Returns an enveloped result (an array). First element (status) is an integer containing HTTP status code (200 means OK, 4xx caller error, 5xx function error). Second element (msg) is a string containing error message, or 'OK' if status is 200. Third element (result) is optional, the actual result. Fourth element (meta) is called result metadata and is optional, a hash that contains extra information.
+Returns an enveloped result (an array).
+
+First element (status) is an integer containing HTTP status code
+(200 means OK, 4xx caller error, 5xx function error). Second element
+(msg) is a string containing error message, or 'OK' if status is
+200. Third element (result) is optional, the actual result. Fourth
+element (meta) is called result metadata and is optional, a hash
+that contains extra information.
+
+ (any)
+
 
 =head2 get_rss_from_twitter_search(%args) -> [status, msg, result, meta]
 
-This function calls getI<rss>from_twitter() with URL:
+Convert Twitter search result page to RSS.
+
+This function calls get_rss_from_twitter() with URL:
 C<https//twitter.com/search?q=QUERY>.
 
 Arguments ('*' denotes required arguments):
@@ -361,11 +383,23 @@ If supplied, will be used instead of the default LWP::UserAgent object.
 
 Return value:
 
-Returns an enveloped result (an array). First element (status) is an integer containing HTTP status code (200 means OK, 4xx caller error, 5xx function error). Second element (msg) is a string containing error message, or 'OK' if status is 200. Third element (result) is optional, the actual result. Fourth element (meta) is called result metadata and is optional, a hash that contains extra information.
+Returns an enveloped result (an array).
+
+First element (status) is an integer containing HTTP status code
+(200 means OK, 4xx caller error, 5xx function error). Second element
+(msg) is a string containing error message, or 'OK' if status is
+200. Third element (result) is optional, the actual result. Fourth
+element (meta) is called result metadata and is optional, a hash
+that contains extra information.
+
+ (any)
+
 
 =head2 get_rss_from_twitter_user(%args) -> [status, msg, result, meta]
 
-This function calls getI<rss>from_twitter() with URL:
+Convert Twitter user main page to RSS.
+
+This function calls get_rss_from_twitter() with URL:
 C<https//twitter.com/USERNAME>.
 
 Arguments ('*' denotes required arguments):
@@ -386,7 +420,16 @@ Twitter username.
 
 Return value:
 
-Returns an enveloped result (an array). First element (status) is an integer containing HTTP status code (200 means OK, 4xx caller error, 5xx function error). Second element (msg) is a string containing error message, or 'OK' if status is 200. Third element (result) is optional, the actual result. Fourth element (meta) is called result metadata and is optional, a hash that contains extra information.
+Returns an enveloped result (an array).
+
+First element (status) is an integer containing HTTP status code
+(200 means OK, 4xx caller error, 5xx function error). Second element
+(msg) is a string containing error message, or 'OK' if status is
+200. Third element (result) is optional, the actual result. Fourth
+element (meta) is called result metadata and is optional, a hash
+that contains extra information.
+
+ (any)
 
 =head1 HOMEPAGE
 
@@ -410,7 +453,7 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Steven Haryanto.
+This software is copyright (c) 2014 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
