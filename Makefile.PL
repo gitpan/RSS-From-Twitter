@@ -18,9 +18,9 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "RSS-From-Twitter",
   "EXE_FILES" => [
-    "bin/get-rss-from-twitter-search",
     "bin/get-rss-from-twitter",
     "bin/get-rss-from-twitter-list",
+    "bin/get-rss-from-twitter-search",
     "bin/get-rss-from-twitter-user"
   ],
   "LICENSE" => "perl",
@@ -30,7 +30,7 @@ my %WriteMakefileArgs = (
     "LWP::UserAgent" => 0,
     "Log::Any" => 0,
     "Mojo::DOM" => 0,
-    "Perinci::CmdLine::Any" => 0,
+    "Perinci::CmdLine::Any" => "0.06",
     "Perinci::Sub::Util" => 0,
     "Rinci" => "v1.1.0",
     "URI::Escape" => 0
@@ -41,7 +41,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -56,7 +56,7 @@ my %FallbackPrereqs = (
   "LWP::UserAgent" => 0,
   "Log::Any" => 0,
   "Mojo::DOM" => 0,
-  "Perinci::CmdLine::Any" => 0,
+  "Perinci::CmdLine::Any" => "0.06",
   "Perinci::Sub::Util" => 0,
   "Rinci" => "v1.1.0",
   "Test::More" => 0,

@@ -21,7 +21,7 @@ our @EXPORT_OK = qw(
                        get_rss_from_twitter_user
                );
 
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 our %SPEC;
 
@@ -261,7 +261,7 @@ RSS::From::Twitter - Convert Twitter page to RSS
 
 =head1 VERSION
 
-This document describes version 0.04 of RSS::From::Twitter (from Perl distribution RSS-From-Twitter), released on 2014-07-22.
+This document describes version 0.05 of RSS::From::Twitter (from Perl distribution RSS-From-Twitter), released on 2014-08-16.
 
 =head1 SYNOPSIS
 

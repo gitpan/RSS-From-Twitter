@@ -2,8 +2,8 @@ NAME
     RSS::From::Twitter - Convert Twitter page to RSS
 
 VERSION
-    This document describes version 0.04 of RSS::From::Twitter (from Perl
-    distribution RSS-From-Twitter), released on 2014-07-22.
+    This document describes version 0.05 of RSS::From::Twitter (from Perl
+    distribution RSS-From-Twitter), released on 2014-08-16.
 
 SYNOPSIS
      # Use command-line scripts get-rss-from-twitter{,-list,-search,-user}

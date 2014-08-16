@@ -1,18 +1,23 @@
 #!perl
 
-our $VERSION = '0.04'; # VERSION
+# Note: This script is a CLI interface to Riap function /RSS/From/Twitter/get_rss_from_twitter_list
+# and generated automatically using Dist::Zilla::Plugin::Rinci::ScriptFromFunc version 0.01
 
-use 5.010;
+our $DATE = '2014-08-16'; # DATE
+our $VERSION = '0.05'; # VERSION
+
+use 5.010001;
 use strict;
 use warnings;
 
 use Perinci::CmdLine::Any;
-Perinci::CmdLine::Any->new(
-    url => '/RSS/From/Twitter/get_rss_from_twitter_list')->run;
 
-1;
-#ABSTRACT: Convert Twitter public list page to RSS
-#PODNAME: get-rss-from-twitter-search
+Perinci::CmdLine::Any->new(
+    url => "/RSS/From/Twitter/get_rss_from_twitter_list",
+)->run;
+
+# ABSTRACT: Convert Twitter public list page to RSS
+# PODNAME: get-rss-from-twitter-list
 
 __END__
 
@@ -22,25 +27,34 @@ __END__
 
 =head1 NAME
 
-get-rss-from-twitter-search - Convert Twitter public list page to RSS
+get-rss-from-twitter-list - Convert Twitter public list page to RSS
 
 =head1 VERSION
 
-This document describes version 0.04 of get-rss-from-twitter-search (from Perl distribution RSS-From-Twitter), released on 2014-07-22.
+This document describes version 0.05 of get-rss-from-twitter-list (from Perl distribution RSS-From-Twitter), released on 2014-08-16.
 
 =head1 SYNOPSIS
 
- $ get-rss-from-twitter-list stevenharyanto perl
+Usage:
+
+ % get-rss-from-twitter-list
+
+Examples:
+
+ TODO
+
+To see all options:
+
+ % get-rss-from-twitter-list --help
 
 =head1 DESCRIPTION
 
-See L<RSS::From::Twitter> for more details, including available options.
+This function calls get_rss_from_twitter() with URL:
+C<https//twitter.com/USERNAME/LISTNAME>.
 
-=head1 SEE ALSO
+=head1 OPTIONS
 
-L<get-rss-from-twitter>
-
-L<get-rss-from-twitter-search>
+ TODO
 
 =head1 HOMEPAGE
 

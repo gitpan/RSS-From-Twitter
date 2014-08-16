@@ -1,18 +1,23 @@
 #!perl
 
-our $VERSION = '0.04'; # VERSION
+# Note: This script is a CLI interface to Riap function /RSS/From/Twitter/get_rss_from_twitter
+# and generated automatically using Dist::Zilla::Plugin::Rinci::ScriptFromFunc version 0.01
 
-use 5.010;
+our $DATE = '2014-08-16'; # DATE
+our $VERSION = '0.05'; # VERSION
+
+use 5.010001;
 use strict;
 use warnings;
 
 use Perinci::CmdLine::Any;
-Perinci::CmdLine::Any->new(
-    url => '/RSS/From/Twitter/get_rss_from_twitter')->run;
 
-1;
-#ABSTRACT: Convert Twitter page to RSS
-#PODNAME: get-rss-from-twitter
+Perinci::CmdLine::Any->new(
+    url => "/RSS/From/Twitter/get_rss_from_twitter",
+)->run;
+
+# ABSTRACT: Convert Twitter page to RSS
+# PODNAME: get-rss-from-twitter
 
 __END__
 
@@ -26,23 +31,36 @@ get-rss-from-twitter - Convert Twitter page to RSS
 
 =head1 VERSION
 
-This document describes version 0.04 of get-rss-from-twitter (from Perl distribution RSS-From-Twitter), released on 2014-07-22.
+This document describes version 0.05 of get-rss-from-twitter (from Perl distribution RSS-From-Twitter), released on 2014-08-16.
 
 =head1 SYNOPSIS
 
- $ get-rss-from-twitter https://twitter.com/stevenharyanto
+Usage:
+
+ % get-rss-from-twitter
+
+Examples:
+
+ TODO
+
+To see all options:
+
+ % get-rss-from-twitter --help
 
 =head1 DESCRIPTION
 
-See L<RSS::From::Twitter> for more details, including available options.
+In June 2013, Twitter retired the RSS v1 API (e.g.
+http://search.twitter.com/search.rss?q=blah, etc). However, its replacement, the
+v1.1 API, is not as straightforward to use (e.g. needs auth). This function
+scrapes the Twitter search result page (e.g. https://twitter.com/search?q=blah)
+and converts it to RSS. I wrote this because I have other scripts expecting RSS
+input.
 
-=head1 SEE ALSO
+Expect breakage from time to time though, as scraping method is rather fragile.
 
-L<get-rss-from-twitter-list>
+=head1 OPTIONS
 
-L<get-rss-from-twitter-search>
-
-L<get-rss-from-twitter-user>
+ TODO
 
 =head1 HOMEPAGE
 
